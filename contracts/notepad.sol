@@ -3,6 +3,12 @@
 pragma solidity ^0.8.0;
 
 contract Notepad {
+    /**
+        If for personal reasons you want to hide contact from "similar contracts" in scan
+        then just write something unique here
+        but the more you write here, the longer the deployment of the contract will be.
+    **/
+    string uniq = "data";
 
     address public owner;
     mapping(address => string[]) notes;
